@@ -14,10 +14,10 @@
     - 소스코드에 직접 다 때려 박지 않고, 'tslib' 패키지에서 import 하도록 유도하여 최종 번들 용량을 최적화함.
 
  5. [결론]: esModuleInterop은 module 옵션(최종 출력 형태)이 무엇이든 간에, 
- **"개발자가 소스 코드에서 통일된 최신 import 문법을 쓰면서도 
- 옛날 CommonJS 라이브러리들을 아무 에러 없이 가져다 쓸 수 있게 해주는 마법의 래퍼(Wrapper)"**이다.
- 만약 module: "CommonJS" 이고 esModuleInterop: false 인 상태에서 아래 코드를 작성하면:
- import React from 'react'; // React는 옛날 CommonJS 방식으로 만들어진 라이브러리
- TypeScript: "야, 네가 나중에 코드를 require로 바꾸라고 설정(module: "CommonJS")한 건 알겠는데, 
- 지금 네가 쓴 문법(import default) 자체가 저 옛날 react 모듈이랑 규격이 안 맞아! 
- react에는 default라는 게 없다고! 빨간 줄 딱 대! 아니면 esModuleInterop: true 로 바꿔서 호환성 래핑 되도록 해"
+ - **"개발자가 소스 코드에서 통일된 최신 import 문법을 쓰면서도 
+ - 옛날 CommonJS 라이브러리들을 아무 에러 없이 가져다 쓸 수 있게 해주는 마법의 래퍼(Wrapper)"**이다.
+ - 만약 module: "CommonJS" 이고 esModuleInterop: false 인 상태에서 아래 코드를 작성하면:
+ - import React from 'react'; // React는 옛날 CommonJS 방식으로 만들어진 라이브러리
+ - TypeScript: "야, 네가 나중에 코드를 require로 바꾸라고 설정(module: "CommonJS")한 건 알겠는데, 
+ - 지금 네가 쓴 문법(import default) 자체가 저 옛날 react 모듈이랑 규격이 안 맞아! 
+ - react에는 default라는 게 없다고! 빨간 줄 딱 대! 아니면 esModuleInterop: true 로 바꿔서 호환성 래핑 되도록 해"
