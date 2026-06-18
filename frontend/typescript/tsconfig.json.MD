@@ -21,3 +21,6 @@
  - TypeScript: "야, 네가 나중에 코드를 require로 바꾸라고 설정(module: "CommonJS")한 건 알겠는데, 
  - 지금 네가 쓴 문법(import default) 자체가 저 옛날 react 모듈이랑 규격이 안 맞아! 
  - react에는 default라는 게 없다고! 빨간 줄 딱 대! 아니면 esModuleInterop: true 로 바꿔서 호환성 래핑 되도록 해"
+
+ 6. "skipLibCheck": true, // 라이브러리의 타입검사는 스킵
+ 7. "forceConsistentCasingInFileNames": true // 윈도우(대소문자 구분X)와 배포서버/깃허브(리눅스, 대소문자 구분O) 간의 파일명 인식 차이로 인한 빌드 에러를 방지
